@@ -159,13 +159,15 @@ box-shadow: 0 2px 8px 0 rgb(7, 7, 7);
       box-shadow: 0 2px 8px 0 rgb(7, 7, 7);
     margin-top: 20px;
     margin-left: 20px;
-    font-size: 18px;
+    font-size: 22px;
     width: 100%;
+    
   }
 
   .b1 {
     margin-left: 35%;
 box-shadow: 0 2px 8px 0 rgb(7, 7, 7);
+width: 30%;
   }
 
   .d3 {
