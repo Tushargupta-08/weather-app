@@ -1,20 +1,17 @@
-
 body {
-  color: white;
-  background-image: url("https://images.unsplash.com/photo-1546039907-7d3e7015ed8a");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  margin: 0;
-  font-family: sans-serif;
-}
 
+  color: white;
+  background-image: url("https://www.shutterstock.com/image-photo/dramatic-black-smoke-fire-danger-600nw-1927135535.jpg");
+  
+  background-size: cover;              
+  background-repeat: no-repeat;     
+  background-position: center;        
+  background-attachment: fixed;        
+}
 
 .App {
   text-align: center;
 }
-
 
 .App-header {
   background-color: #282c34;
@@ -27,83 +24,62 @@ body {
   color: white;
 }
 
-
 .App-link {
   color: #61dafb;
 }
 
-
 .d1 {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: last baseline;
   height: 30vh;
-  border-color: white;
+  justify-content: center;
+  border-color: rgb(255, 255, 255);
 }
-
 .d2 {
   margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  height: auto;
 }
-
 .d3 {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 4px 8px rgba(243, 243, 243, 0.5);
-  width: 90%;
-  max-width: 500px;
-  border-radius: 20px;
-  margin: 20px auto;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(6px);
-}
+  height: auto;
 
+  box-shadow: 0px 4px 8px 0px rgb(243, 243, 243);
+  width: 500px;
+  border-radius: 20px;
+
+  
+}
 .d4 {
   padding: 20px;
   border-radius: 10px;
-  color: white;
+
+  color:white;
+  max-width: auto;
+  margin: auto;
   text-align: center;
 }
 
-
 .t1 {
-  width: 100%;
-  max-width: 350px;
-  font-size: 20px;
+  width: 350px;
+  font-size: 23px;
   border-radius: 15px;
-  margin: 10px;
-  box-shadow: 0 2px 8px rgba(240, 239, 239, 0.6);
-  padding: 10px;
+  margin-right: 35px;
+  box-shadow: 0 2px 8px 0 rgb(240, 239, 239);
+  padding: 2px 2px 2px 10px;
   outline: none;
   height: 45px;
   background: transparent;
-  color: white;
-  border: 1px solid white;
+  color: rgb(255, 251, 251);
+  border:1px white;
 }
-
-
-.b1 {
+.b1{
   background: transparent;
-  box-shadow: 0px 4px 8px rgba(209, 208, 208, 0.5);
-  color: white;
-  padding: 10px 20px;
-  border: 1px solid white;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: 10px;
+    box-shadow: 0px 4px 8px 0px rgb(209, 208, 208);
 }
-
-.b1:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-
 .background-video {
   position: fixed;
   top: 0;
@@ -114,8 +90,14 @@ body {
   z-index: -1;
 }
 
-
-
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 @media screen and (max-width: 768px) {
   .d1 {
     height: auto;
@@ -124,6 +106,7 @@ body {
   }
 
   .t1 {
+    margin-top: 20px;
     font-size: 18px;
     width: 80%;
   }
@@ -136,19 +119,56 @@ body {
     width: 90%;
   }
 }
-
-@media screen and (max-width: 480px) {
-  .App-header {
-    font-size: calc(10px + 1vmin);
+@media screen and (max-width: 767px) {
+  .d1 {
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 200px;
   }
 
   .t1 {
-    font-size: 16px;
-    height: 40px;
+      box-shadow: 0 2px 8px 0 rgb(7, 7, 7);
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    width: 100%;
+        margin-bottom:30px ;
   }
 
   .b1 {
-    font-size: 14px;
-    padding: 8px 16px;
+
+    margin-left: 250px;
+box-shadow: 0 2px 8px 0 rgb(7, 7, 7);
+  }
+
+  .d3 {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .d1 {
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 200px;
+  }
+
+  .t1 {
+      box-shadow: 0 2px 8px 0 rgb(7, 7, 7);
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .b1 {
+    margin-left: 35%;
+box-shadow: 0 2px 8px 0 rgb(7, 7, 7);
+  }
+
+  .d3 {
+    width: 40%;
   }
 }
